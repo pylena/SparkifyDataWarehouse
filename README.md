@@ -2,19 +2,17 @@
 
 The goal of this project is to build an ETL pipeline that extracts data from S3, stages it in Amazon Redshift, and transforms it into a set of dimensional tables optimized for analytical queries. Sparkify, a music streaming startup, needs to analyze user listening behavior and understand their music preferences.
 
-## DataSet
+## Dataset
 
 * Log Data: JSON logs of user activity (e.g., song plays).
 
 * Song Data: JSON metadata about songs and artists.
 
-## Project Archtectire 
-![image](https://github.com/user-attachments/assets/aaad3611-8409-4855-b4f5-10e0e58413ea)
-
+## Project Architecture
+<img src="https://github.com/user-attachments/assets/aaad3611-8409-4855-b4f5-10e0e58413ea" width="600"/>
 
 ## Sparkfy Star Schema Database
-![image](https://github.com/user-attachments/assets/f10df04d-caac-43d6-8234-f7c5b037b730)
-
+<img src="https://github.com/user-attachments/assets/f10df04d-caac-43d6-8234-f7c5b037b730" width="600"/>
 
 
 ## How to Run the Project
@@ -38,12 +36,7 @@ The goal of this project is to build an ETL pipeline that extracts data from S3,
 | `dwh.cfg`          | Configuration file with AWS credentials, Redshift, and S3 paths.               |
 
 
-### Sample explortityl anaylsis:
-* Who are the most popular artists?
 
-* What are the most played songs?
-
-* When do users listen most frequently?
 
 
                                         
