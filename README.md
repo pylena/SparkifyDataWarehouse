@@ -13,6 +13,8 @@ The goal of this project is to build an ETL pipeline that extracts data from S3,
 
 
 ## Sparkfy Star Schema Database
+![image](https://github.com/user-attachments/assets/f10df04d-caac-43d6-8234-f7c5b037b730)
+![image](https://github.com/user-attachments/assets/f10df04d-caac-43d6-8234-f7c5b037b730)
 
 
 
