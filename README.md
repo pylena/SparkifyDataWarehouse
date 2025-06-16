@@ -32,7 +32,7 @@ The goal of this project is to build an ETL pipeline that extracts data from S3,
 | ------------------ | ------------------------------------------------------------------------------ |
 | `create_tables.py` | Connects to Redshift and creates all necessary tables.                         |
 | `etl.py`           | Runs the ETL pipeline: loads staging tables and inserts into analytics tables. |
-| `sql_queries.py`   | Contains all SQL queries (CREATE, DROP, COPY, INSERT).                         |
+| `sql_queries.py`   | Contains all SQL queries.                      |
 | `dwh.cfg`          | Configuration file with AWS credentials, Redshift, and S3 paths.               |
 
 
