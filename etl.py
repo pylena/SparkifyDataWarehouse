@@ -15,13 +15,6 @@ def insert_tables(cur, conn):
         conn.commit()
 
 
-def sample_analysis(cur, conn):
-    for query in sample_analysis_queries:
-        cur.execute(query)
-        results = cur.fetchall()
-        for row in results:
-            print(row)
-
 
 def main():
     config = configparser.ConfigParser()

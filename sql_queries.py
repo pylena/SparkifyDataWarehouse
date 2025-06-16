@@ -128,7 +128,7 @@ REGION 'us-west-2'
 """).format(config.get('S3', 'SONG_DATA'), config.get('IAM_ROLE', 'ARN'))
 
 # FINAL TABLES
-
+# filter the events to only include NextSong page events
 songplay_table_insert = ("""
 INSERT INTO songplays (start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
 SELECT DISTINCT
@@ -215,18 +215,16 @@ gender_artist_preference =  ("""
     JOIN users u ON sp.user_id = u.user_id
     JOIN artists a ON sp.artist_id = a.artist_id
     GROUP BY u.gender, a.artist_id, a.name
-    ORDER BY plays DESC;
     LIMIT 5;
 """)
 
 # query2:  What time of day has the most listening activity?
 time_of_day_activity = ("""
     t.hour,
-    COUNT(*) AS num_plays
+    COUNT(*) AS activity_count
 FROM songplays sp
 JOIN time t ON sp.start_time = t.start_time
 GROUP BY t.hour
-ORDER BY num_plays DESC;
 lIMIT 5;
 """)
 
